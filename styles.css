@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     padding: 6rem 0;
