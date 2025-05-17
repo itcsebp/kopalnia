@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LECH-POL | Kopalnia Piasku i Produkcja Betonu | Rawa Mazowiecka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cookies info -->
+    <div id="cookies-alert" class="alert alert-warning text-center mb-0 rounded-0">
+        <div class="container">
+            Ta strona używa plików cookies. <a href="#" class="text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#cookiesModal">Dowiedz się więcej</a>.
+            <button type="button" class="btn btn-sm btn-dark ms-3" onclick="acceptCookies()">Akceptuję</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <span class="text-warning">LECH</span>-POL
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">O firmie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Produkty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 text-white">
+                    <h1 class="display-4 fw-bold mb-4">Kopalnia Piasku <span class="text-warning">LECH-POL</span></h1>
+                    <p class="lead mb-5">Profesjonalna produkcja betonu towarowego i sprzedaż kruszyw w Rawie Mazowieckiej i okolicach</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-warning btn-lg px-4 fw-bold">Kontakt</a>
+                        <a href="#products" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-telephone me-2"></i>Nasze usługi
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Company Info -->
+    <section class="bg-warning py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 border-end border-dark border-opacity-25 py-2">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="bi bi-calendar-check fs-4 me-3"></i>
+                        <div>
+                            <p class="mb-0 fw-bold">Działamy od 2006 roku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 border-end border-dark border-opacity-25 py-2">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="bi bi-geo-alt fs-4 me-3"></i>
+                        <div>
+						    <a href="#map" class="text-dark text-decoration-none">
+								<p class="mb-0 fw-bold">Stara Wojska,</p>
+								<p class="mb-0 fw-bold">96-200 Rawa Mazowiecka</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <i class="bi bi-clock fs-4 me-3"></i>
+                        <div>
+                            <p class="mb-0 fw-bold">Pon-Pt: 7:00-17:00 | Sob: 8:00-13:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">O naszej firmie</h2>
+                    <p class="lead">Kopalnia Piasku LECH-POL to prężnie działające przedsiębiorstwo z 20-letnim doświadczeniem w branży budowlanej.</p>
+                    <p>Specjalizujemy się w wydobywaniu i sprzedaży piasku oraz produkcji betonu towarowego najwyższej jakości. Nasza siedziba znajduje się w Starej Wójskiej koło Rawy Mazowieckiej.</p>
+                    <p>Zaufało nam już setki klientów - zarówno osoby prywatne, jak i duże firmy budowlane z regionu łódzkiego i mazowieckiego.</p>
+                    
+                    <div class="company-details mt-4 p-4 bg-white rounded shadow-sm border-start border-4 border-warning">
+                        <h5 class="fw-bold mb-3">Dane firmy:</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Nazwa:</strong> Kopalnia piasku LECH-POL Produkcja i sprzedaż betonu towarowego Zygmunt Lechowski</li>
+                            <li class="mb-2"><strong>Adres:</strong> Ogrodowa 22, 96-200 Rawa Mazowiecka</li>
+							<li class="mb-2"><strong>Adres kopalni:</strong> Stara Wojska, 96-200 Rawa Mazowiecka </li>
+                            <li class="mb-2"><strong>NIP:</strong> 8351000343</li>
+                            <li class="mb-2"><strong>REGON:</strong> 750433356</li>
+							<li class="mb-2"><strong>Telefon kopalnia piasku:</strong> +48 601 218 671</li>
+							<li class="mb-2"><strong>Telefon betoniarnia:</strong> +48 609 282 101</li>
+                            <li><strong>Email:</strong>kopalniapiasku@vp.pl </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow overflow-hidden">
+                        <img src="assets/images/kopalnia.jpg" alt="Kopalnia piasku LECH-POL" class="img-fluid">
+                    </div>
+                    <div class="row mt-3 g-2">
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-3">
+                                    <i class="bi bi-cone-striped fs-1 text-warning mb-2"></i>
+                                    <h5 class="fw-bold mb-0">20 lat</h5>
+                                    <p class="text-muted mb-0">Doświadczenia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body text-center p-3">
+                                    <i class="bi bi-people fs-1 text-warning mb-2"></i>
+                                    <h5 class="fw-bold mb-0">500+</h5>
+                                    <p class="text-muted mb-0">Zadowolonych klientów</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Nasze usługi</h2>
+                <p class="lead text-muted">Oferujemy wysokiej jakości materiały budowlane</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="card-header bg-dark text-white py-3">
+                            <h5 class="mb-0 text-center">Beton towarowy</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Beton zwykły klasy C8/10 - C50/60</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Beton specjalny (wodoszczelny, mrozoodporny)</li>
+								<li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Beton towarowy</li>
+								<li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Bloczki betonowe z wibroprasy</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Dostawa pompą do betonu</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Dostawy 24/7 dla dużych projektów</li>
+                                <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Doradztwo techniczne</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#contact" class="btn btn-warning w-100">Zapytaj o ofertę</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="card-header bg-dark text-white py-3">
+                            <h5 class="mb-0 text-center">Piasek i kruszywa</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Piasek płukany</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Piasek budowlany</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Piasek podsypkowy</li>
+								<li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Żwir płukany</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Żwir różnej frakcji</li>
+                                <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Mieszanki piaskowo-żwirowe</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#contact" class="btn btn-warning w-100">Zapytaj o ofertę</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm product-card">
+                        <div class="card-header bg-dark text-white py-3">
+                            <h5 class="mb-0 text-center">Usługi dodatkowe</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Transport materiałów budowlanych</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Wynajem sprzętu budowlanego</li>
+								<li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Rozbiórki i wyburzenia</li>
+								<li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Naprawy dróg</li>
+								<li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Roboty ziemne</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Doradztwo w doborze materiałów</li>
+                                <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i>Pomoc techniczna na budowie</li>
+                                <li><i class="bi bi-check-circle-fill text-warning me-2"></i>Elastyczne warunki współpracy</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-light border-0">
+                            <a href="#contact" class="btn btn-warning w-100">Zapytaj o ofertę</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Galeria</h2>
+                <p class="lead text-muted">Zobacz naszą działalność</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-3 col-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="assets/images/betonowanie.jpg">
+                        <img src="assets/images/betonowanie.jpg" alt="Betonowanie" class="img-fluid rounded shadow-sm gallery-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="assets/images/kopalnia2.jpg">
+                        <img src="assets/images/kopalnia2.jpg" alt="Kopalnia" class="img-fluid rounded shadow-sm gallery-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="assets/images/mieszarka.jpg">
+                        <img src="assets/images/mieszarka.jpg" alt="Mieszarka betonu" class="img-fluid rounded shadow-sm gallery-img">
+                    </a>
+                </div>
+                <div class="col-md-3 col-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="assets/images/transport.jpg">
+                        <img src="assets/images/transport.jpg" alt="Transport" class="img-fluid rounded shadow-sm gallery-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Kontakt</h2>
+                    <p class="lead">Zapraszamy do współpracy</p>
+                    <p>Skontaktuj się z nami, aby uzyskać więcej informacji lub złożyć zamówienie.</p>
+                    
+                    <div class="contact-info mt-4">
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-warning bg-opacity-20 text-warning me-3">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Adres</h5>
+                                <p class="mb-0">Ogrodowa 22<br>96-200 Rawa Mazowiecka</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-warning bg-opacity-20 text-warning me-3">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Telefon</h5>
+                                <p class="mb-0">Kopalnia piasku: +48 601 218 671</p>
+								<p class="mb-0">Betoniarnia: +48 609 282 101</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <div class="icon-box bg-warning bg-opacity-20 text-warning me-3">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Email</h5>
+                                <p class="mb-0"> kopalniapiasku@vp.pl</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="icon-box bg-warning bg-opacity-20 text-warning me-3">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold mb-1">Godziny otwarcia</h5>
+                                <p class="mb-0">Pon-Pt: 7:00 - 17:00<br>Sob: 8:00 - 13:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="fw-bold mb-4">Formularz kontaktowy</h3>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Imię i nazwisko</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Temat</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Wybierz temat</option>
+                                        <option>Zapytanie o beton towarowy</option>
+                                        <option>Zapytanie o piasek i kruszywa</option>
+                                        <option>Zapytanie o transport</option>
+                                        <option>Inne pytanie</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Wiadomość</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="consent" required>
+                                    <label class="form-check-label" for="consent">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100 py-2 fw-bold">Wyślij wiadomość</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map" class="bg-light py-4">
+        <div class="container">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body p-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1098.6460648599495!2d20.18092532147378!3d51.817544065622826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sStara%20Wojska%20lech-pol!5e0!3m2!1spl!2spl!4v1747471211864!5m2!1spl!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4 text-warning">Kopalnia Piasku LECH-POL</h5>
+                    <p>Profesjonalna produkcja betonu towarowego i sprzedaż kruszyw w regionie Rawy Mazowieckiej.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Menu</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Start</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">O firmie</a></li>
+                        <li class="mb-2"><a href="#products" class="text-white text-decoration-none">Produkty</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-white text-decoration-none">Galeria</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Kontakt</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i> Ogrodowa 22, 96-200 Rawa Mazowiecka</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> Kopalnia piasku: +48 601 218 671</li>
+						<li class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> Betoniarnia: +48 609 282 101</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> kopalniapiasku@vp.pl</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4">Godziny otwarcia</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Poniedziałek - Piątek</li>
+                        <li class="mb-2">7:00 - 17:00</li>
+                        <li>Sobota</li>
+                        <li>8:00 - 13:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 Kopalnia Piasku LECH-POL. Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white small text-decoration-none me-3" data-bs-toggle="modal" data-bs-target="#privacyModal">Polityka prywatności</a>
+                    <a href="#" class="text-white small text-decoration-none" data-bs-toggle="modal" data-bs-target="#cookiesModal">Polityka cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+	
+<!-- Przycisk "Na górę" -->
+<a href="#" id="backToTop" class="btn btn-primary back-to-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+   <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+   <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Modals -->
+    <div class="modal fade" id="cookiesModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Polityka cookies</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ta strona używa plików cookies w celu zapewnienia prawidłowego działania strony oraz do celów statystycznych.</p>
+                    <p>Pliki cookies to małe pliki tekstowe przechowywane na Twoim urządzeniu. Możesz zarządzać ustawieniami cookies w swojej przeglądarce.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Rozumiem</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Polityka prywatności</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Informacje ogólne</h6>
+                    <p>Administratorem danych jest Kopalnia Piasku LECH-POL Zygmunt Lechowski, Ogrodowa 22, 96-200 Rawa Mazowiecka, NIP: 835-177-41-42.</p>
+                    
+                    <h6 class="mt-4">2. Cele przetwarzania</h6>
+                    <p>Dane przetwarzamy w celu realizacji usług, odpowiedzi na zapytania oraz zawarcia i realizacji umów.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Zamknij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" id="modalImage" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Wiadomość wysłana</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Dziękujemy za kontakt. Twoja wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
