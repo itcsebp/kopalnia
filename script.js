@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             navbar.classList.remove('scrolled');
         }
+
+        // Przycisk "Na górę"
+        const backToTopButton = document.getElementById('backToTop');
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'flex';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
     });
 
     // Gallery modal
@@ -49,12 +57,22 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Simulate form submission
             const successModal = new bootstrap.Modal(document.getElementById('successModal'));
             successModal.show();
             
-            // Reset form
             contactForm.reset();
+        });
+    }
+
+    // Inicjalizacja przycisku "Na górę"
+    const backToTopButton = document.getElementById('backToTop');
+    if (backToTopButton) {
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     }
 });
