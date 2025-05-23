@@ -40,6 +40,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
     // Gallery modal
     const galleryModal = document.getElementById('galleryModal');
     if (galleryModal) {
@@ -82,3 +91,47 @@ function acceptCookies() {
     localStorage.setItem('cookiesAccepted', 'true');
     document.getElementById('cookies-alert').style.display = 'none';
 }
+// Obsługa przycisku "Pokaż więcej opinii"
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('loadMoreOpinions');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Tutaj można dodać kod do ładowania kolejnych opinii
+            // np. poprzez AJAX lub pokazanie ukrytych elementów
+            alert('W prawdziwej implementacji tutaj zostałby załadowany kolejny zestaw opinii');
+        });
+    }
+	
+	
+	
+/*	// Prosta ochrona przed spamem
+if (document.getElementById('email').value.toLowerCase().includes('@gmail.com')) {
+    alert("Proszę użyć firmowego adresu email");
+    return false;
+}*/
+
+// Filtrowanie galerii
+document.querySelectorAll('.gallery-filter-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        // Usuń active ze wszystkich przycisków
+        document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Dodaj active do klikniętego
+        this.classList.add('active');
+        
+        const filter = this.getAttribute('data-filter');
+        
+        // Filtruj zdjęcia
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
+});
