@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Kopalnia Piasku LECH-POL</title>
+    <!-- Te same style co w index.html -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Logo w sekcji head -->
+	
+    <style>
+        .logo-title {
+            height: 70px; /* Dostosuj wysokość logo */
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nawigacja (możesz skopiować z index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="assets/images/logo-lechpol1.jpg" alt="LECH-POL" class="logo-title">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">O firmie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Produkty</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<style>
+        .logo-title {
+            height: 70px; /* Dostosuj wysokość logo */
+            margin-right: 50px;
+        }
+    </style>
+    <!-- Sekcja Galerii -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold mb-3">Nasza Galeria</h1>
+                <p class="lead text-muted">Zobacz naszą działalność w szczegółach</p>
+            </div>
+            
+            <!-- Filtry -->
+            <div class="gallery-filter mb-4">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <button type="button" class="gallery-filter-btn" data-filter="all">Wszystkie</button>
+                    <button type="button" class="gallery-filter-btn" data-filter="kopalnia">Kopalnia</button>
+                    <button type="button" class="gallery-filter-btn" data-filter="beton">Beton</button>
+					<!--
+                    <button type="button" class="gallery-filter-btn" data-filter="transport">Transport</button>
+                    <button type="button" class="gallery-filter-btn" data-filter="maszyny">Maszyny</button>
+					-->
+                </div>
+            </div>
+
+            <!-- Galeria -->
+            <div class="row gallery-grid">
+                <!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia01.jpg" alt="Kopalnia piasku 1" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia01.jpg" data-bs-title="Kopalnia piasku 1">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 1</div>
+                </div>
+                <!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia02.jpg" alt="Kopalnia piasku 2" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia02.jpg" data-bs-title="Kopalnia piasku 2">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 2</div>
+                </div>
+				<!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia03.jpg" alt="Kopalnia piasku" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia03.jpg" data-bs-title="Kopalnia piasku 3">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 3</div>
+                </div>
+				<!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia04.jpg" alt="Kopalnia piasku" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia04.jpg" data-bs-title="Kopalnia piasku 4">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 4</div>
+                </div>
+				<!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia05.jpg" alt="Kopalnia piasku" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia05.jpg" data-bs-title="Kopalnia piasku 5">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 5</div>
+                </div>
+				<!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia06.jpg" alt="Kopalnia piasku" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia06.jpg" data-bs-title="Kopalnia piasku 6">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 6</div>
+                </div>
+				<!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia07.jpg" alt="Kopalnia piasku" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia07.jpg" data-bs-title="Kopalnia piasku 7">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 7</div>
+                </div>
+				<!-- Zdjęcie 1 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="kopalnia">
+                    <div class="gallery-card">
+                        <img src="assets/images/kopalnia/kopalnia08.jpg" alt="Kopalnia piasku" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/kopalnia/kopalnia08.jpg" data-bs-title="Kopalnia piasku 8">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Kopalnia piasku 8</div>
+                </div>
+				
+                <!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton01.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton01.jpg" data-bs-title="Betoniarnia">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 1</div>
+                </div>
+                <!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton02.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton02.jpg" data-bs-title="Betoniarnia 1">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 2</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton03.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton03.jpg" data-bs-title="Betoniarnia 3">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 3</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton04.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton04.jpg" data-bs-title="Betoniarnia 4">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 4</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton05.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton05.jpg" data-bs-title="Betoniarnia 5">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 5</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton06.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton06.jpg" data-bs-title="Betoniarnia 6">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 6</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton07.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton07.jpg" data-bs-title="Betoniarnia 7">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 7</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton08.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton08.jpg" data-bs-title="Betoniarnia 8">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 8</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton09.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton09.jpg" data-bs-title="Betoniarnia 9">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 9</div>
+                </div>
+				<!-- Zdjęcie 2 -->
+                <div class="col-6 col-md-4 col-lg-3 mb-4 gallery-item" data-category="beton">
+                    <div class="gallery-card">
+                        <img src="assets/images/beton/beton10.jpg" alt="Betonowanie" class="img-fluid">
+                        <div class="gallery-overlay">
+                            <button class="gallery-view-btn" data-bs-toggle="modal" data-bs-target="#galleryModal" 
+                                    data-bs-img="assets/images/beton/beton10.jpg" data-bs-title="Betoniarnia 10">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-caption mt-2">Betoniarnia 10</div>
+                </div>
+				
+				
+				
+				
+                <!-- Tutaj dodaj więcej zdjęć... -->
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" id="modalImage" class="img-fluid" alt="" style="max-height: 70vh;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container py-4">
+            <div class="row justify-content-center ">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4 text-warning">Kopalnia Piasku LECH-POL</h5>
+                    <p>Profesjonalna produkcja betonu towarowego i sprzedaż kruszyw w regionie Rawy Mazowieckiej.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Kontakt</h5>
+                    <ul class="list-unstyled">
+						<li class="mb-2"><i class="bi bi-bookmark-check-fill text-warning me-2"></i> <strong>Kopalnia piasku LECH-POL </strong><br>Produkcja i sprzedaż betonu towarowego Zygmunt Lechowski</li>
+						<li class="mb-2"><i class="bi bi-house-door-fil text-warning me-2"></i> <strong>Adres:</strong> Ogrodowa 22, <br>96-200 Rawa Mazowiecka</li>
+						<li class="mb-2"><i class="bi bi-check-square-fill text-warning me-2"></i> <strong>NIP:</strong> 8351000343</li>
+						<li class="mb-2"><i class="bi bi-check-square-fill text-warning me-2"></i> <strong>Regon:</strong> 750433356</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> Kopalnia piasku: +48 601 218 671</li>
+                        <li class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> Betoniarnia: +48 609 282 101</li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> kopalniapiasku@vp.pl</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-4">Godziny otwarcia</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><strong>Poniedziałek - Piątek</strong></li>
+                        <li class="mb-2">7:00 - 17:00</li>
+                        <li><strong>Sobota</strong></li>
+                        <li>7:00 - 12:00</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 small">&copy; 2023 Kopalnia Piasku LECH-POL. Wszelkie prawa zastrzeżone.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white small text-decoration-none me-3" data-bs-toggle="modal" data-bs-target="#privacyModal">Polityka prywatności</a>
+                    <a href="#" class="text-white small text-decoration-none" data-bs-toggle="modal" data-bs-target="#cookiesModal">Polityka cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Przycisk "Na górę" -->
+    <a href="#" id="backToTop" class="btn btn-yellow back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Skrypty -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Skrypt galerii (ten sam co wcześniej)
+        document.querySelectorAll('.gallery-filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.gallery-filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.gallery-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        const galleryModal = document.getElementById('galleryModal');
+        if (galleryModal) {
+            galleryModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                document.getElementById('modalImage').src = button.getAttribute('data-bs-img');
+                document.getElementById('modalTitle').textContent = button.getAttribute('data-bs-title');
+            });
+        }
+    </script>
+</body>
+</html>
